@@ -8,20 +8,20 @@ body{font-family: arial, sans-serif; margin: 0; }
 a{text-decoration: none;}
 
 #topo{
-	background-color: #fff;
+	background-color: rgba(228,216,228);
 	color: #fff;
 	overflow: hidden;
-	padding: 15px;
 	text-align: center;
 }
 
-/* logotipo
+
+
+/* logotipo*/
 .logo{
-	width: 30%;
-	float: inline-start;
-	overflow: hidden;
-	box-sizing: border-box;
-}*/
+	width: 100%;
+    position: relative;
+    margin-top: -20px;
+}
 
 .logo img{
 	width: 250px;
@@ -39,35 +39,41 @@ a{text-decoration: none;}
 .menu li{
 	list-style: none;
 	display: inline-block;
-	font-size: 25px;
+	font-size: 14px;
 	padding: 15px 10px;
 	border: solid 1px transparent;
 }
 .menu li a{
-	color: #000;
+	color: #868686;
 	text-decoration: none;
 	padding: 15px 15px 1px 15px;
+    font-family: 'lato','sans-serif';
 }
 .menu li a:hover{
 	color: #b68bb6;
+    
+}
 }
 .menu li:hover{
 	border: solid 1px #b68bb6;
 }
 
 .nav{
-	padding: 0px 0px 0px 0px;
-	margin: 0px;
+    margin-top: 75px;
+}
+.nav-container {
+    display:flex;
+    justify-content: center;
 }
 
 /* banner */
 #banner{
-	background: url(images/banner1.jpg) no-repeat center center;
+	background: url(../../imagens/attractive-african-woman-having-massage-relaxing-in-spa-salon-closed-eyes.jpg) no-repeat center center;
 	background-size: cover;
-	margin: 0;
-	color: #fff;
+	color: rgba(185, 156, 185);
 	text-align: center;
 	padding: 100px 0;
+    line-height: 250px;
 }
 
 /* destaques */
@@ -110,6 +116,8 @@ a{text-decoration: none;}
 #rodape{
 	text-align: center;
 	background-color: #b68bb6;
-	padding: 20px 0;
+	padding: 10px 0;
 	overflow: visible;
+    margin-top: 10px;
+    font-size: 12px;
 }
