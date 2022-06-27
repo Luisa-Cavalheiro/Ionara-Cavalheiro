@@ -1,42 +1,49 @@
 * {
-padding: 0;
-margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 
-body{font-family: arial, sans-serif; margin: 0; }
-a{text-decoration: none;}
+body {
+    font-family: lato, sans-serif;
+    margin: 0;
+}
 
-#topo{
-	background-color: rgba(228,216,228);
-	color: #fff;
-	overflow: hidden;
-	text-align: center;
+a {
+    text-decoration: none;
+}
+
+#topo {
+    background-color: rgba(228, 216, 228, 0.5);
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
 }
 
 
 
 /* logotipo*/
-.logo{
-	width: 100%;
+.logo {
+    width: 100%;
     position: relative;
     margin-top: -20px;
 }
 
-.logo img{
-	width: 250px;
+.logo img {
+    width: 250px;
 }
 
 .icon_container {
-    display:flex;
-    background-color: rgba(228,216,228);
+    display: flex;
+    background-color: rgba(228, 216, 228);
     color: #868686;
 }
 
 .icon {
     position: relative;
     margin-top: 15px;
-    margin-left: 5px;;
+    margin-left: 5px;
+    ;
 }
 
 
@@ -48,89 +55,99 @@ a{text-decoration: none;}
 	box-sizing: border-box;
 	min-height: 150px;
 }*/
-.menu li{
-	list-style: none;
-	display: inline-block;
-	font-size: 14px;
-	padding: 15px 10px;
-	border: solid 1px transparent;
-}
-.menu li a{
-	color: #868686;
-	text-decoration: none;
-	padding: 15px 15px 1px 15px;
-    font-family: 'lato','sans-serif';
-}
-.menu li a:hover{
-	color: #b68bb6;
-    
-}
-}
-.menu li:hover{
-	border: solid 1px #b68bb6;
+.menu li {
+    list-style: none;
+    display: inline-block;
+    font-size: 14px;
+    padding: 15px 10px;
+    border: solid 1px transparent;
 }
 
-.nav{
+.menu li a {
+    color: #868686;
+    text-decoration: none;
+    padding: 15px 15px 1px 15px;
+    font-family: 'lato', 'sans-serif';
+}
+
+.menu li a:hover {
+    color: #b68bb6;
+
+}
+}
+
+.menu li:hover {
+    border: solid 1px #b68bb6;
+}
+
+.nav {
     overflow: hidden;
     margin-top: 75px;
 }
+
 .nav-container {
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
 /* banner */
-#banner{
-	background: url(../../imagens/attractive-african-woman-having-massage-relaxing-in-spa-salon-closed-eyes.jpg) no-repeat center center;
-	background-size: cover;
-	color: rgba(185, 156, 185);
-	text-align: center;
-	padding: 100px 0;
+#banner {
+    background: url(../../imagens/attractive-african-woman-having-massage-relaxing-in-spa-salon-closed-eyes.jpg) no-repeat center center;
+    background-size: cover;
+    color: rgba(185, 156, 185);
+    text-align: center;
+    padding: 100px 0;
     line-height: 250px;
 }
 
 /* destaques */
-.container{
-	width: 90%;
-	margin: 0 auto;
+.container {
+    width: 90%;
+    margin: 0 auto;
 }
-.destaques{
-	overflow: auto;
+
+.destaques {
+    overflow: auto;
 }
-.destaque{
-	width: 33%;
-	float: left;
-	margin-top: 40px;
-	padding: 0 20px;
-	box-sizing: border-box;
-	min-height: 250px;
+
+.destaque {
+    width: 33%;
+    float: left;
+    margin-top: 40px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    min-height: 250px;
 }
-.destaque .imagem{
-	width: 100%;
-	max-height: 250px;
-	overflow: hidden;
-	color: #fff;
-	text-align: center;
+
+.destaque .imagem {
+    width: 100%;
+    max-height: 250px;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
 }
-.destaque .imagem img{
-	width: 100%;
-	max-width: 250px;
+
+.destaque .imagem img {
+    width: 100%;
+    max-width: 250px;
 }
-.destaque h3{
-	text-align: center;
-	color: #000;
+
+.destaque h3 {
+    text-align: center;
+    color: #000;
 }
-.destaque p{
-	text-align: justify;
+
+.destaque p {
+    text-align: justify;
 }
 
 
 /* rodapé */
-#rodape{
-	text-align: center;
-	background-color: #b68bb6;
-	padding: 10px 0;
-	overflow: visible;
+#rodape {
+    text-align: center;
+    background-color: rgba(185, 156, 185, 0.7);
+    padding: 10px 0;
+    overflow: visible;
     margin-top: 10px;
     font-size: 12px;
 }
@@ -138,32 +155,77 @@ a{text-decoration: none;}
 
 /* Dropdown Button */
 
+.dropdown {
+    background-color: rgba(228, 216, 228, 0.5);
+}
 
 .dropdown .dropbtn {
-  font-size: 14px;  
-  border: none;
-  outline: none;
-  background-color: rgba(228,216,228);
-  color: #868686;
-  text-decoration: none;
-  font-family: 'lato','sans-serif';
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: #868686;
+    text-decoration: none;
+    font-family: 'lato', 'sans-serif';
 }
 
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgba(228,216,228);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  line-height: 20px;
-  padding-bottom: 10px;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    line-height: 20px;
+    padding-bottom: 10px;
+    z-index: 1;
 }
 
 .dropdown-content a:hover {
-  color: #b68bb6;
+    color: #b68bb6;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
+}
+
+/* Tratamentos */
+
+.container_tratamentos {
+    background-color: rgba(185, 156, 185, 0.1);
+    width: 90%;
+    height: 350px;
+    margin: 10px 5% 15px 5%;
+    border-radius: 20px;
+}
+
+.subtitle_tratamentos {
+    margin: 50px 0 50px 0;
+    color: rgba(102, 36, 131);
+    text-align: center;
+    font-family: lato light;
+    -ms-transform: scaleY(2);
+    /* IE 9 */
+    -webkit-transform: scaleY(2);
+    /* Safari */
+    transform: scaleY(2);
+    letter-spacing: 3px
+}
+
+.tratamentos_content {
+    display: flex;
+}
+
+.img_tratamentos {
+    margin: 35px 35px 35px 35px;
+
+}
+
+.description {
+    text-align: justify;
+    color: rgba(102, 36, 131);
+    margin: 35px 10px 35px 10px;
+}
+
+.description p {
+    margin-top: 10px;
+    margin-right: 35px;
 }
