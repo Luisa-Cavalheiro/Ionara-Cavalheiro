@@ -1,108 +1,183 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ef0496090a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/style.css">
     <title>IONARA CAVALHEIRO - TERAPIAS PARA O BEM ESTAR</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <header id="topo">
-
-        <div class="logo">
-            <a href="index.html"><img src="images/logo.jpg" alt="@Ionara"></a>
-        </div>
-
         <nav class="menu">
-            <ul class="nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="bio.html">Biografia</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="vip.html">Area Vip</a></li>
-                <li><a href="agenda.html">Agenda</a></li>
-                <li><a href="loja.html">Loja</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
+            <div id="row" class="nav-container">
+                <div>
+                    <ul class="nav">
+                        <li>
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="bio.html">BIOGRAFIA</a>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">SERVIÇOS
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <span class="icon_container">
+                                        <i class="fa-solid fa-angles-right icon"></i>
+                                        <a href="terapeuticos.html">TRATAMENTOS TERAPÊUTICOS</a>
+                                    </span>
+                                    <span class="icon_container">
+                                        <i class="fa-solid fa-angles-right icon"></i>
+                                        <a href="esteticos.html">TRATAMENTOS ESTÉTICOS</a>
+                                    </span>
+                                    <span class="icon_container">
+                                        <i class="fa-solid fa-angles-right icon"></i>
+                                        <a href="termoterapias.html">TRATAMENTOS TERMOTERÁPICOS</a>
+                                    </span>
+                                    <span class="icon_container">
+                                        <i class="fa-solid fa-angles-right icon"></i>
+                                        <a href="eletroterapia.html">TRATAMENTOS DE ELETROTERAPIA</a>
+                                    </span>
+                                    <span class="icon_container">
+                                        <i class="fa-solid fa-angles-right icon"></i>
+                                        <a href="spa.html">TRATAMENTOS DE SPA</a>
+                                    </span>
+                                    <span class="icon_container">
+                                        <i class="fa-solid fa-angles-right icon"></i>
+                                        <a href="gestantes.html">TRATAMENTOS GESTANTES</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="index.html" class="logo">
+                        <img src="../imagens/assinatura-removebg-preview.png" alt="@Ionara"></a>
+                </div>
+                <div>
+                    <ul class="nav">
+                        <li>
+                            <a href="agenda.html">AGENDA</a>
+                        </li>
+                        <li>
+                            <a href="contato.html">CONTATO</a>
+                        </li>
+                        <li>
+                            <a href="vip.html">ÁREA VIP</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
     </header>
 
-    <section id="banner">
-        <h2>Terapias para o bem estar @Ionara Cavalheiro</h2>
-    </section>
+
 
     <!-- seu conteúdo aqui -->
     <form action="" method="post" enctype="multipart/form-data">
         <div class="agenda">
-            <p class="titulo">FAÇA SEU AGENDAMENTO AQUI</p>
-            <p class="subtitulo">Preencha os dados abaixo ou, se preferir, contate-nos via WhatsApp</p>
-            <fieldset>
-                <div>
-                    <label>NOME COMPLETO:</label><input class="caixa" required type="text" name="nome"
-                        placeholder="nome e sobrenome">
+            <h2 class="subtitle_tratamentos">FAÇA SEU AGENDAMENTO AQUI</h2>
+            <div class="description">
+                <p>Preencha os dados abaixo ou, se preferir, contate-nos via WhatsApp</p>
+            </div>
+            <fieldset class="description">
+                <div class="form_fields">
+                    <div>
+                        <label>NOME COMPLETO:</label>
+                    </div>
+                    <div>
+                        <input class="caixa" required type="text" name="nome" placeholder="nome e sobrenome">
+                    </div>
                 </div>
-                <div>
-                    <label>TELEFONE:</label><input class="caixa" required type="tel" name="telefone"
-                        placeholder="(xx) xxxxx-xxxx">
+                <div class="form_fields">
+                    <div>
+                        <label>TELEFONE:</label>
+                    </div>
+                    <div>
+                        <input class="caixa" required type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx">
+                    </div>
                 </div>
-                <div>
-                    <label>ESCOLHA O TRATAMENTO</label>
-                    <select name="regioes" required>
-                        <option value="">-- selecione --</option>
-                        <optgroup label="TRATAMENTOS TERAPÊUTICOS">
-                            <option>Liberação Miofascial</option>
-                            <option>Terapia Reichiana</option>
-                            <option>Reiki</option>
-                            <option>Massagem Relaxante</option>
-                            <option>Drenagem Linfática</option>
-                            <option>Sea Massagem - Massagem com Conchas</option>
-                            <option>Massagem com Bambus</option>
-                            <option>Massagem Cranio-Facial</option>
-                            <option>Massagem da Borboleta - Bioenergética Suave</option>
-                        </optgroup>
-                        <optgroup label="TRATAMENTOS ESTÉTICOS">
-                            <option>Drenagem Linfática</option>
-                            <option>Lipossagem</option>
-                            <option>Lipossagem com Pedras Quentes</option>
-                            <option>Hidratação Corporal</option>
-                            <option>Vinhoterapia</option>
-                            <option>Argiloterapia</option>
-                        </optgroup>
-                        <optgroup label="TRATAMENTOS TERMOTERÁPICOS">
-                            <option>Pedras Quentes</option>
-                            <option>Pindas Chinesas</option>
-                            <option>Herbal Wrap - Caminha de Ervas</option>
-                            <option>Manta Térmica Vibratória</option>
-                        </optgroup>
-                        <optgroup label="TRATAMENTOS ELETROTERAPIA">
-                            <option>Corrente Russa</option>
-                            <option>Ultrassom</option>
-                        </optgroup>
-                        <optgroup label="TRATAMENTOS PARA GESTANTES">
-                            <option>Drenagem Linfática</option>
-                            <option>Massagem Gestante</option>
-                        </optgroup>
-                        <optgroup label="TRATAMENTOS DE SPA">
-                            <option>Spa dos Pés</option>
-                            <option>Spa Facial</option>
-                        </optgroup>
-                    </select>
+                <div class="form_fields">
+                    <div>
+                        <label>ESCOLHA O TRATAMENTO</label>
+                    </div>
+                    <div>
+                        <select class="caixa" name="regioes" required>
+                            <option value="">-- selecione --</option>
+                            <optgroup label="TRATAMENTOS TERAPÊUTICOS">
+                                <option>Liberação Miofascial</option>
+                                <option>Terapia Reichiana</option>
+                                <option>Reiki</option>
+                                <option>Massagem Relaxante</option>
+                                <option>Drenagem Linfática</option>
+                                <option>Sea Massagem - Massagem com Conchas</option>
+                                <option>Massagem com Bambus</option>
+                                <option>Massagem Cranio-Facial</option>
+                                <option>Massagem da Borboleta - Bioenergética Suave</option>
+                            </optgroup>
+                            <optgroup label="TRATAMENTOS ESTÉTICOS">
+                                <option>Drenagem Linfática</option>
+                                <option>Lipossagem</option>
+                                <option>Lipossagem com Pedras Quentes</option>
+                                <option>Hidratação Corporal</option>
+                                <option>Vinhoterapia</option>
+                                <option>Argiloterapia</option>
+                            </optgroup>
+                            <optgroup label="TRATAMENTOS TERMOTERÁPICOS">
+                                <option>Pedras Quentes</option>
+                                <option>Pindas Chinesas</option>
+                                <option>Herbal Wrap - Caminha de Ervas</option>
+                                <option>Manta Térmica Vibratória</option>
+                            </optgroup>
+                            <optgroup label="TRATAMENTOS ELETROTERAPIA">
+                                <option>Corrente Russa</option>
+                                <option>Ultrassom</option>
+                            </optgroup>
+                            <optgroup label="TRATAMENTOS PARA GESTANTES">
+                                <option>Drenagem Linfática</option>
+                                <option>Massagem Gestante</option>
+                            </optgroup>
+                            <optgroup label="TRATAMENTOS DE SPA">
+                                <option>Spa dos Pés</option>
+                                <option>Spa Facial</option>
+                            </optgroup>
+                        </select>
+                    </div>
                 </div>
-                <div>
-                    <label>ESCOLHA A DATA</label>
-                    <input class="caixa" required type="date" name="data">
+                <div class="form_fields">
+                    <div>
+                        <label>ESCOLHA A DATA</label>
+                    </div>
+                    <div>
+                        <input class="caixa" required type="date" name="data">
+                    </div>
                 </div>
-                <div>
-                    <label>ESCOLHA A HORA</label>
-                    <input class="caixa" required type="time" name="hora">
+                <div class="form_fields">
+                    <div>
+                        <label>ESCOLHA A HORA</label>
+                    </div>
+                    <div>
+                        <input class="caixa" required type="time" name="hora">
+                    </div>
                 </div>
+                <button class="btn_submit" name="enviar">Enviar</button>
         </div>
         </fieldset>
-        <button name="enviar">Enviar</button>
+        
     </form>
+
+    </section>
+
     <footer id="rodape">
-        <p>@Ionara Cavalheiro - Todos os direitos reservados
+        <p>@Ionara Cavalheiro - Todos os direitos reservados</p>
     </footer>
 </body>
 
